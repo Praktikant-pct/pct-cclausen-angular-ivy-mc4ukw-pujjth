@@ -9,11 +9,11 @@
   <input [(ngModel)]="points" type="number" class="punkte"/>
 </div>
 
-<div>
+<div class="button">
   <button (click)="generate()">Erzeuge QR Code</button>
 </div>
 
-<div *ngIf="jwt.length > 0" class="button">
+<div *ngIf="jwt.length > 0">
   <qrcode
     (qrCodeURL)="onChangeURL($event)"
     [qrdata]="jwt"
