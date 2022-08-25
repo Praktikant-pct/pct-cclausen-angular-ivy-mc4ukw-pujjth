@@ -1,3 +1,5 @@
+html{
+}
 div{
   text-align: center;
   background-color: #acc9ff;
@@ -14,7 +16,7 @@ a{
 
 a:link, a:visited {
   color: white;
-  background: #646464;
+  background: rgb(89, 164, 207);
   text-decoration: none;
   padding: 14px 25px;
   width: 100px;
@@ -24,7 +26,6 @@ a:link, a:visited {
 }
 
 a:hover {
-  background-color: #c4c4c4;
   color: white;
   text-align: center;
   text-decoration: none;
