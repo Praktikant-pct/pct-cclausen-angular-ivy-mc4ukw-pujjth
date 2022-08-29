@@ -1,29 +1,15 @@
-<div class="name">
+<div>
 <table>
-  <thead>
+  
+  <thead class="head">
     <th>Name</th>
     <th>Score</th>
   </thead>
   <tbody>
     <tr *ngFor="let names of scores">
       <td>{{ names.name }}</td>
-    </tr>
-      <tr *ngFor="let scores of scores">
-        <td>{{scores.points}}</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+      <td>{{names.points}}</td>
 
-<div class="scores">
-<table>
-  <thead>
-    <th>Score</th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let scores of scores">
-      <td>{{scores.points}}</td>
-    </tr>
   </tbody>
 </table>
 </div>
