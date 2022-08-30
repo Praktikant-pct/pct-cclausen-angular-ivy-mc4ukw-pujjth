@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService, HighScoreEntry } from '../../../backend.service';
+import { crown } from '../../../images';
 
 @Component({
   selector: 'app-scores-display',
@@ -11,6 +12,7 @@ import { BackendService, HighScoreEntry } from '../../../backend.service';
 export class ScoresDisplayComponent implements OnInit {
   public scores: HighScoreEntry[] = [];
   constructor(private backend: BackendService) {}
+  crown=crown
 
   async ngOnInit() {
     this.scores = await this.backend.getHighscores();
